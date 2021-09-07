@@ -1,0 +1,281 @@
+:root {
+    --primary-color: #5fbaa7;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+  } */
+  button.btn.btn-outline-success.bg-secondary.text-white {
+    margin-left: 5px;
+  }
+  .navbar.fix {
+    left: 0;
+    max-width: 100%;
+    overflow: visible;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1200;
+    margin-bottom: 100px;
+    background:#dceb0e; 
+    box-shadow: 2px 2px 4px 2px rgb(49, 49, 48, 0.2);
+}
+.navbar.fix h1{
+    color: #6e7932; 
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+    /* padding-top: 5px;  */
+    text-align: center; 
+    font-size: 35px;
+    margin: 0 auto;
+}
+div.container-fluid h1{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+
+
+
+  .content{
+    width: 100%;
+    height: 700px;
+    /* background: rgb(28, 46, 72); */
+    padding-top: 3em;
+    background: rgba(189, 189, 243, 0.863);
+  }
+
+div#exchange_rate {
+  background: rgb(28, 46, 72);
+  width: 60%;
+  height: 1000px;
+  float: left;
+  
+}
+
+
+
+
+ .money {
+  padding-bottom: 40px;
+  width: 40%;
+  background: rgb(28, 46, 72);
+  margin: 0 auto;
+  border: 1px solid rgb(28, 46, 72);
+  border-radius: 5px;
+  margin-top: 5em;
+  box-shadow: 3px 3px 6px 4px rgb(49, 49, 48, 0.2);
+ }
+ div#timer {
+  /* margin-left: 40%; */
+  text-align: center;
+  margin-top: 3em;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(221, 218, 218);
+  margin-bottom: 1em;
+}
+  img {
+    vertical-align: middle;
+    border-style: none;
+    margin-left: 2%; 
+    box-shadow: 2px 2px 4px 3px rgba(20, 20, 20, 0.2);
+    width: 20%;
+}
+  .btn {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+    box-shadow:  2px 2px 4px 3px rgba(27, 27, 27, 0.2);
+  }
+  button#swap {
+    margin-left: 16%;
+    background: rgb(41, 70, 96);
+  }
+  #amount-one {
+    background: rgb(39, 57, 82);
+    border-radius: 8px 0 0 8px;
+    color: rgb(250, 250, 251);
+    padding-right: 0;
+    padding-left: 0;
+}
+  #amount-two {
+    background: rgb(39, 57, 82);
+    border-radius: 8px 0 0 8px;
+    color: rgb(250, 250, 251);
+    padding-right: 0;
+    padding-left: 0;
+}
+  .currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .currency select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid  rgb(41, 70, 82);
+    font-size: 16px;
+    background: rgb(41, 70, 82);
+    background-image: url('https://img.icons8.com/ios-glyphs/30/000000/chevron-down.png');
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 12px auto, 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 8px 8px 0;
+    color: rgb(250, 250, 251);
+  }
+  
+  .currency input {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    text-align: right;
+  }
+  
+  .swap-rate-money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+    margin-right: 15%;
+  }
+  
+  select:focus,
+  input:focus,
+  button:focus {
+    outline: 0;
+  }
+  div#date {
+    text-align: center;
+    color: whitesmoke;
+    font-size: large;
+  }
+  @media (max-width:1500px){
+    .money{
+      width: 40%;
+    }
+    .currency{
+      width: 10%;
+      flex: 1;
+    }
+    #currency-one{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+    #currency-tow{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+  }
+  @media only screen and (min-width:800px) and (max-width:1200px){
+    .money{
+      width: 70%;
+    }
+    .currency{
+      width: 100%;
+      flex: 1;
+    }
+    #amount-one{
+      width: 55%;
+    }
+    #amount-two{
+      width: 55%;
+    }
+    #currency-one{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+    #currency-tow{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+  }
+  @media only screen and (min-width:600px) and (max-width: 1000px) {
+    
+    .money{
+      width: 60%;
+    }
+    .currency{
+      width: 70%;
+      flex: 1;
+    }
+    #amount-one{
+      width: 100%;
+    }
+    #amount-two{
+      width: 100%;
+    }
+    #currency-one{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+    #currency-tow{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+
+   
+  }
+  @media only screen and (min-width:412px) and (max-width: 600px) {
+    
+    .money{
+      width: 80%;
+    }
+    .currency{
+      width: 70%;
+      flex: 1;
+    }
+    #amount-one{
+      width: 100%;
+    }
+    #amount-two{
+      width: 100%;
+    }
+    #currency-one{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+    #currency-tow{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+  }
+  @media only screen and (min-width:300px) and (max-width: 412px){
+    .money{
+      width: 95%;
+      margin-top: 7em;
+    }
+    .currency{
+      width: 70%;
+      flex: 1;
+    }
+    #amount-one{
+      width: 100%;
+    }
+    #amount-two{
+      width: 100%;
+    }
+    #currency-one{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+    #currency-tow{
+      border: 1.5px solid rgb(41, 70, 82);
+    }
+  }
